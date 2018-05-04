@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BehaviourScript : MonoBehaviour {
 
-	public Image image;
+	public Image scanIntro;
 
 	// Use this for initialization
 	void Start () {
@@ -14,12 +14,12 @@ public class BehaviourScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
 		if(DefaultTrackableEventHandler.isTracked) {
 			// hide
-			image.enabled = false;
+			scanIntro.enabled = false;
 		} else {
-			image.enabled = true;
+			// show
+			// scanIntro.enabled = true;
 		}
 	}
 }
